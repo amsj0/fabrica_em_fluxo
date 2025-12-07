@@ -1,0 +1,361 @@
+{
+  "$defs": {
+    "Decision": {
+      "additionalProperties": false,
+      "properties": {
+        "workers": {
+          "default": 10,
+          "maximum": 200,
+          "minimum": 0,
+          "title": "Workers",
+          "type": "integer"
+        },
+        "shifts": {
+          "default": 1,
+          "maximum": 3,
+          "minimum": 1,
+          "title": "Shifts",
+          "type": "integer"
+        },
+        "maintenance": {
+          "default": 0.4,
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Maintenance",
+          "type": "number"
+        },
+        "materials_order": {
+          "default": 1100,
+          "maximum": 10000000.0,
+          "minimum": 0,
+          "title": "Materials Order",
+          "type": "number"
+        },
+        "investment": {
+          "default": 0,
+          "maximum": 10000,
+          "minimum": 0,
+          "title": "Investment",
+          "type": "number"
+        },
+        "planned": {
+          "default": 950,
+          "maximum": 1000000,
+          "minimum": 0,
+          "title": "Planned",
+          "type": "integer"
+        }
+      },
+      "title": "Decision",
+      "type": "object"
+    },
+    "Goal": {
+      "additionalProperties": false,
+      "properties": {
+        "indicator": {
+          "enum": [
+            "service",
+            "backlog",
+            "stock",
+            "unit_cost",
+            "budget",
+            "scrap_rate",
+            "utilization"
+          ],
+          "title": "Indicator",
+          "type": "string"
+        },
+        "kind": {
+          "default": "target",
+          "enum": [
+            "target",
+            "upper",
+            "lower"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "target": {
+          "maximum": 100000000000000.0,
+          "minimum": -100000000000000.0,
+          "title": "Target",
+          "type": "number"
+        },
+        "weight": {
+          "default": 1,
+          "maximum": 100,
+          "minimum": 0,
+          "title": "Weight",
+          "type": "number"
+        },
+        "scale": {
+          "default": 1,
+          "exclusiveMinimum": 0,
+          "maximum": 1000000000000.0,
+          "title": "Scale",
+          "type": "number"
+        }
+      },
+      "required": [
+        "indicator",
+        "target"
+      ],
+      "title": "Goal",
+      "type": "object"
+    },
+    "Line": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[a-z][a-z0-9_]{0,23}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "name": {
+          "maxLength": 80,
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        },
+        "capacity": {
+          "default": 1000,
+          "exclusiveMinimum": 0,
+          "maximum": 1000000.0,
+          "title": "Capacity",
+          "type": "number"
+        },
+        "productivity": {
+          "default": 100,
+          "exclusiveMinimum": 0,
+          "maximum": 100000.0,
+          "title": "Productivity",
+          "type": "number"
+        },
+        "availability": {
+          "default": 0.92,
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Availability",
+          "type": "number"
+        },
+        "defect_rate": {
+          "default": 0.03,
+          "maximum": 0.5,
+          "minimum": 0,
+          "title": "Defect Rate",
+          "type": "number"
+        },
+        "material_per_unit": {
+          "default": 1,
+          "exclusiveMinimum": 0,
+          "maximum": 10000,
+          "title": "Material Per Unit",
+          "type": "number"
+        },
+        "initial_materials": {
+          "default": 500,
+          "maximum": 100000000.0,
+          "minimum": 0,
+          "title": "Initial Materials",
+          "type": "number"
+        },
+        "initial_stock": {
+          "default": 100,
+          "maximum": 1000000,
+          "minimum": 0,
+          "title": "Initial Stock",
+          "type": "integer"
+        },
+        "initial_backlog": {
+          "default": 0,
+          "maximum": 1000000,
+          "minimum": 0,
+          "title": "Initial Backlog",
+          "type": "integer"
+        },
+        "demand": {
+          "items": {
+            "maximum": 1000000,
+            "minimum": 0,
+            "type": "integer"
+          },
+          "maxItems": 36,
+          "minItems": 1,
+          "title": "Demand",
+          "type": "array"
+        },
+        "material_cost": {
+          "default": 12,
+          "maximum": 1000000.0,
+          "minimum": 0,
+          "title": "Material Cost",
+          "type": "number"
+        },
+        "wage": {
+          "default": 2200,
+          "maximum": 1000000.0,
+          "minimum": 0,
+          "title": "Wage",
+          "type": "number"
+        },
+        "fixed_cost": {
+          "default": 3000,
+          "maximum": 100000000.0,
+          "minimum": 0,
+          "title": "Fixed Cost",
+          "type": "number"
+        },
+        "variable_cost": {
+          "default": 4,
+          "maximum": 1000000.0,
+          "minimum": 0,
+          "title": "Variable Cost",
+          "type": "number"
+        },
+        "maintenance_cost": {
+          "default": 1500,
+          "maximum": 10000000.0,
+          "minimum": 0,
+          "title": "Maintenance Cost",
+          "type": "number"
+        },
+        "investment_cost": {
+          "default": 100,
+          "maximum": 1000000.0,
+          "minimum": 0,
+          "title": "Investment Cost",
+          "type": "number"
+        },
+        "holding_cost": {
+          "default": 1,
+          "maximum": 1000000.0,
+          "minimum": 0,
+          "title": "Holding Cost",
+          "type": "number"
+        },
+        "sale_price": {
+          "default": 55,
+          "maximum": 10000000.0,
+          "minimum": 0,
+          "title": "Sale Price",
+          "type": "number"
+        }
+      },
+      "required": [
+        "id",
+        "name"
+      ],
+      "title": "Line",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "name": {
+      "default": "Duas células · cenário base",
+      "maxLength": 120,
+      "minLength": 1,
+      "title": "Name",
+      "type": "string"
+    },
+    "description": {
+      "default": "",
+      "maxLength": 4000,
+      "title": "Description",
+      "type": "string"
+    },
+    "start": {
+      "default": "2026-01",
+      "pattern": "^\\d{4}-\\d{2}$",
+      "title": "Start",
+      "type": "string"
+    },
+    "months": {
+      "default": 6,
+      "maximum": 36,
+      "minimum": 1,
+      "title": "Months",
+      "type": "integer"
+    },
+    "seed": {
+      "default": 42,
+      "maximum": 4294967295,
+      "minimum": 0,
+      "title": "Seed",
+      "type": "integer"
+    },
+    "shocks": {
+      "default": false,
+      "title": "Shocks",
+      "type": "boolean"
+    },
+    "demand_mode": {
+      "default": "backlog",
+      "enum": [
+        "backlog",
+        "lost"
+      ],
+      "title": "Demand Mode",
+      "type": "string"
+    },
+    "budget": {
+      "default": 200000,
+      "maximum": 1000000000000.0,
+      "minimum": 0,
+      "title": "Budget",
+      "type": "number"
+    },
+    "policy_mode": {
+      "default": "fixed",
+      "enum": [
+        "fixed",
+        "manual",
+        "endogenous"
+      ],
+      "title": "Policy Mode",
+      "type": "string"
+    },
+    "lines": {
+      "items": {
+        "$ref": "#/$defs/Line"
+      },
+      "maxItems": 6,
+      "minItems": 1,
+      "title": "Lines",
+      "type": "array"
+    },
+    "policy": {
+      "additionalProperties": {
+        "$ref": "#/$defs/Decision"
+      },
+      "title": "Policy",
+      "type": "object"
+    },
+    "manual": {
+      "items": {
+        "additionalProperties": {
+          "$ref": "#/$defs/Decision"
+        },
+        "type": "object"
+      },
+      "maxItems": 36,
+      "title": "Manual",
+      "type": "array"
+    },
+    "goals": {
+      "items": {
+        "$ref": "#/$defs/Goal"
+      },
+      "maxItems": 7,
+      "minItems": 1,
+      "title": "Goals",
+      "type": "array"
+    }
+  },
+  "required": [
+    "lines",
+    "policy"
+  ],
+  "title": "Scenario",
+  "type": "object"
+}

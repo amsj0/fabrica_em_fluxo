@@ -1,0 +1,114 @@
+[
+  {
+    "Path": "C:\\Users\\Agesinaldo\\.codex\\.chatgpt-projects\\g-p-6ac9917837448191b2786af325ecd9ea\\fabrica_em_fluxo\\.gitignore",
+    "Hash": "B0B5C8191599BCD6ADDF088C29A99B39AC9E977957AF361780DB1A4044C7C2CC"
+  },
+  {
+    "Path": "C:\\Users\\Agesinaldo\\.codex\\.chatgpt-projects\\g-p-6ac9917837448191b2786af325ecd9ea\\fabrica_em_fluxo\\.streamlit\\config.toml",
+    "Hash": "B7C81E0FA4623BF25D559C72B0BECBD49A7445053C34FDE6F7F8BD7C2235FA5E"
+  },
+  {
+    "Path": "C:\\Users\\Agesinaldo\\.codex\\.chatgpt-projects\\g-p-6ac9917837448191b2786af325ecd9ea\\fabrica_em_fluxo\\app\\main.py",
+    "Hash": "13B3009E2853BFF865D1AD785AC1708A1F3AFFB6B62D06A949AC197791278B27"
+  },
+  {
+    "Path": "C:\\Users\\Agesinaldo\\.codex\\.chatgpt-projects\\g-p-6ac9917837448191b2786af325ecd9ea\\fabrica_em_fluxo\\cli.py",
+    "Hash": "E05D43128B0096F4A785624F4A4908D7BA971B17E01E2159552D7735C5C76D8E"
+  },
+  {
+    "Path": "C:\\Users\\Agesinaldo\\.codex\\.chatgpt-projects\\g-p-6ac9917837448191b2786af325ecd9ea\\fabrica_em_fluxo\\data\\demo\\01_base.json",
+    "Hash": "21E71D1B9E56B156CD3B66B4E9E15C02DBAC1F7164D2585EF0B14F9825C2A30C"
+  },
+  {
+    "Path": "C:\\Users\\Agesinaldo\\.codex\\.chatgpt-projects\\g-p-6ac9917837448191b2786af325ecd9ea\\fabrica_em_fluxo\\data\\demo\\02_manual.json",
+    "Hash": "C77B2295657D220A200EB57C7F775D745D79D91C95B1A5E09CBF5A9A5E4F22D4"
+  },
+  {
+    "Path": "C:\\Users\\Agesinaldo\\.codex\\.chatgpt-projects\\g-p-6ac9917837448191b2786af325ecd9ea\\fabrica_em_fluxo\\data\\demo\\03_busca_local.json",
+    "Hash": "9B1A5B0CD239088EAE3C56591D4FB5ACA1F2CDC6CAA12DC8B3032E04FC7EA820"
+  },
+  {
+    "Path": "C:\\Users\\Agesinaldo\\.codex\\.chatgpt-projects\\g-p-6ac9917837448191b2786af325ecd9ea\\fabrica_em_fluxo\\data\\demo\\04_materiais_escassos.json",
+    "Hash": "0CC752ABC1D0EEF3B0E229F01AED4A9477448E70FBD2610598B82EAF0E37D4AE"
+  },
+  {
+    "Path": "C:\\Users\\Agesinaldo\\.codex\\.chatgpt-projects\\g-p-6ac9917837448191b2786af325ecd9ea\\fabrica_em_fluxo\\data\\demo\\05_demanda_perdida.json",
+    "Hash": "48169291FC8B85B69F9E73E3E30B4B49F9CCE409A99DC0B72E6A5CF9DFB8E79B"
+  },
+  {
+    "Path": "C:\\Users\\Agesinaldo\\.codex\\.chatgpt-projects\\g-p-6ac9917837448191b2786af325ecd9ea\\fabrica_em_fluxo\\docs\\arquitetura.md",
+    "Hash": "164A93D719EF0DCF4BE41D61BA14EE91C7BC3E062E25865463E5F4B36A5FC59C"
+  },
+  {
+    "Path": "C:\\Users\\Agesinaldo\\.codex\\.chatgpt-projects\\g-p-6ac9917837448191b2786af325ecd9ea\\fabrica_em_fluxo\\docs\\execution-evidence.json",
+    "Hash": "7659F1B2DBB26B10D61367D32A1E10AC5ED670B14CA8AF2B63CE63488FC58907"
+  },
+  {
+    "Path": "C:\\Users\\Agesinaldo\\.codex\\.chatgpt-projects\\g-p-6ac9917837448191b2786af325ecd9ea\\fabrica_em_fluxo\\docs\\modelo.md",
+    "Hash": "C555C286950897091364D6DD9AD727A41006EBD299E1DE3A9DB0DCC1A3274B1E"
+  },
+  {
+    "Path": "C:\\Users\\Agesinaldo\\.codex\\.chatgpt-projects\\g-p-6ac9917837448191b2786af325ecd9ea\\fabrica_em_fluxo\\docs\\resultados-verificados.png",
+    "Hash": "5C9120C3D0AA90DD705C9275258D599D5D38DC4DA6CB63FECEE361AFD9CCE482"
+  },
+  {
+    "Path": "C:\\Users\\Agesinaldo\\.codex\\.chatgpt-projects\\g-p-6ac9917837448191b2786af325ecd9ea\\fabrica_em_fluxo\\docs\\scenario.schema.json",
+    "Hash": "1A6A6A9EE0D68975CCED86CE14262126C162F293525724D7C1F1E9583AEDA5E8"
+  },
+  {
+    "Path": "C:\\Users\\Agesinaldo\\.codex\\.chatgpt-projects\\g-p-6ac9917837448191b2786af325ecd9ea\\fabrica_em_fluxo\\docs\\validacao.md",
+    "Hash": "40267DD9A669AC6B0FE04BF8574F47C8BCB9313060B545703BCFA3E159BAB6BE"
+  },
+  {
+    "Path": "C:\\Users\\Agesinaldo\\.codex\\.chatgpt-projects\\g-p-6ac9917837448191b2786af325ecd9ea\\fabrica_em_fluxo\\fluxo\\__init__.py",
+    "Hash": "3DDBE825B377376403ED1D1852D1651CEF2BB15C0893BF017F0B68C085AC68D1"
+  },
+  {
+    "Path": "C:\\Users\\Agesinaldo\\.codex\\.chatgpt-projects\\g-p-6ac9917837448191b2786af325ecd9ea\\fabrica_em_fluxo\\fluxo\\engine.py",
+    "Hash": "53F4D2CF8AF072290F9C5A9EA84BAB6F44545B38049383041EF1B9854E2CCDF0"
+  },
+  {
+    "Path": "C:\\Users\\Agesinaldo\\.codex\\.chatgpt-projects\\g-p-6ac9917837448191b2786af325ecd9ea\\fabrica_em_fluxo\\fluxo\\export.py",
+    "Hash": "D4A53A1FC8899A1689987F0CB7FDCD641ADAAD08955CC056A4BDE04BC9C26C21"
+  },
+  {
+    "Path": "C:\\Users\\Agesinaldo\\.codex\\.chatgpt-projects\\g-p-6ac9917837448191b2786af325ecd9ea\\fabrica_em_fluxo\\fluxo\\schema.py",
+    "Hash": "76B288B40129C5EF590AB605390588E78776ACC788182CD059D31D3BCDB10372"
+  },
+  {
+    "Path": "C:\\Users\\Agesinaldo\\.codex\\.chatgpt-projects\\g-p-6ac9917837448191b2786af325ecd9ea\\fabrica_em_fluxo\\fluxo\\service.py",
+    "Hash": "668B95792C83159FAD43E6BB9D97AC575E5164BC6DE0C6A8825D5C01B572E5EE"
+  },
+  {
+    "Path": "C:\\Users\\Agesinaldo\\.codex\\.chatgpt-projects\\g-p-6ac9917837448191b2786af325ecd9ea\\fabrica_em_fluxo\\fluxo\\storage.py",
+    "Hash": "A929C9280957351CAB091B1736D7A06DF4CC406C232F3518E285317D49EA1EC7"
+  },
+  {
+    "Path": "C:\\Users\\Agesinaldo\\.codex\\.chatgpt-projects\\g-p-6ac9917837448191b2786af325ecd9ea\\fabrica_em_fluxo\\iniciar.cmd",
+    "Hash": "9F43EE8E241E31B2BC925A46633C16D598172C47E1286B1010354FB0CB527067"
+  },
+  {
+    "Path": "C:\\Users\\Agesinaldo\\.codex\\.chatgpt-projects\\g-p-6ac9917837448191b2786af325ecd9ea\\fabrica_em_fluxo\\pytest.ini",
+    "Hash": "2CC87733B49C5B4687E9E8FD8DD428845F33BDECCB5791FDC03EF47051ABE3C4"
+  },
+  {
+    "Path": "C:\\Users\\Agesinaldo\\.codex\\.chatgpt-projects\\g-p-6ac9917837448191b2786af325ecd9ea\\fabrica_em_fluxo\\README.md",
+    "Hash": "68ED899FE81A8423CAFBCEE1A785AD3FA83C6DF6360D6EABEF0D4337CA7B5DDC"
+  },
+  {
+    "Path": "C:\\Users\\Agesinaldo\\.codex\\.chatgpt-projects\\g-p-6ac9917837448191b2786af325ecd9ea\\fabrica_em_fluxo\\requirements.txt",
+    "Hash": "915D4DC32ECB365D8262E2818265F5F4439AC796A0645274777D5A36E910BD7B"
+  },
+  {
+    "Path": "C:\\Users\\Agesinaldo\\.codex\\.chatgpt-projects\\g-p-6ac9917837448191b2786af325ecd9ea\\fabrica_em_fluxo\\tests\\test_engine.py",
+    "Hash": "2AF52EE3C8B1B0B5CADAD9E5BB179CF8323FDC9DEE90A95FD8401B68EABC173E"
+  },
+  {
+    "Path": "C:\\Users\\Agesinaldo\\.codex\\.chatgpt-projects\\g-p-6ac9917837448191b2786af325ecd9ea\\fabrica_em_fluxo\\tests\\test_service.py",
+    "Hash": "7A8B6E506A7D0AFB6BD1114302489615FFCBC1886ADF7F663ECC4AFC3F36097C"
+  },
+  {
+    "Path": "C:\\Users\\Agesinaldo\\.codex\\.chatgpt-projects\\g-p-6ac9917837448191b2786af325ecd9ea\\fabrica_em_fluxo\\tests\\test_ui.py",
+    "Hash": "002EB61F5C026E1D5B7220331344EEACA2FEDA8D74C1D46808869E3D42960DB1"
+  }
+]

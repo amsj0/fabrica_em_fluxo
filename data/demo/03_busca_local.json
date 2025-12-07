@@ -1,0 +1,101 @@
+{
+  "name": "Busca local com choques",
+  "description": "",
+  "start": "2026-01",
+  "months": 6,
+  "seed": 42,
+  "shocks": true,
+  "demand_mode": "backlog",
+  "budget": 200000.0,
+  "policy_mode": "endogenous",
+  "lines": [
+    {
+      "id": "alpha",
+      "name": "Célula Alfa",
+      "capacity": 1000.0,
+      "productivity": 100.0,
+      "availability": 0.92,
+      "defect_rate": 0.03,
+      "material_per_unit": 1.0,
+      "initial_materials": 500.0,
+      "initial_stock": 100,
+      "initial_backlog": 0,
+      "demand": [
+        900
+      ],
+      "material_cost": 12.0,
+      "wage": 2200.0,
+      "fixed_cost": 3000.0,
+      "variable_cost": 4.0,
+      "maintenance_cost": 1500.0,
+      "investment_cost": 100.0,
+      "holding_cost": 1.0,
+      "sale_price": 55.0
+    },
+    {
+      "id": "beta",
+      "name": "Célula Beta",
+      "capacity": 750.0,
+      "productivity": 90.0,
+      "availability": 0.92,
+      "defect_rate": 0.03,
+      "material_per_unit": 1.0,
+      "initial_materials": 300.0,
+      "initial_stock": 100,
+      "initial_backlog": 0,
+      "demand": [
+        650
+      ],
+      "material_cost": 12.0,
+      "wage": 2200.0,
+      "fixed_cost": 3000.0,
+      "variable_cost": 4.0,
+      "maintenance_cost": 1500.0,
+      "investment_cost": 100.0,
+      "holding_cost": 1.0,
+      "sale_price": 55.0
+    }
+  ],
+  "policy": {
+    "alpha": {
+      "workers": 10,
+      "shifts": 1,
+      "maintenance": 0.4,
+      "materials_order": 1100.0,
+      "investment": 0.0,
+      "planned": 950
+    },
+    "beta": {
+      "workers": 8,
+      "shifts": 1,
+      "maintenance": 0.4,
+      "materials_order": 800.0,
+      "investment": 0.0,
+      "planned": 720
+    }
+  },
+  "manual": [],
+  "goals": [
+    {
+      "indicator": "service",
+      "kind": "lower",
+      "target": 0.95,
+      "weight": 3.0,
+      "scale": 0.1
+    },
+    {
+      "indicator": "unit_cost",
+      "kind": "upper",
+      "target": 48.0,
+      "weight": 1.0,
+      "scale": 10.0
+    },
+    {
+      "indicator": "budget",
+      "kind": "lower",
+      "target": 100000.0,
+      "weight": 1.0,
+      "scale": 100000.0
+    }
+  ]
+}

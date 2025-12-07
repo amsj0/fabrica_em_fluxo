@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-13",
+  "python_tests": 37,
+  "original_python_tests": 20,
+  "original_cpp_suites": 2,
+  "url": "http://127.0.0.1:8502",
+  "demos": [
+    {
+      "file": "data\\demo\\01_base.json",
+      "run_id": "5adc8713-25ab-4ef2-9fbe-09997148d9bf",
+      "hash": "9eddd7532668412e3576fa34ebc9cbf790b0cd864f1d0b852fa6e0f70519f142",
+      "budget": 252087.0
+    },
+    {
+      "file": "data\\demo\\02_manual.json",
+      "run_id": "c2827ad0-40a6-458a-826f-bef8f7e0588a",
+      "hash": "3efcbb975d8d9582fe923c9dc20aaf2d1de613fb16e9159aa2b97dd7604be2fa",
+      "budget": -34344.0
+    },
+    {
+      "file": "data\\demo\\03_busca_local.json",
+      "run_id": "5c5f07d3-83e0-43e3-bd75-3cba50579e14",
+      "hash": "4619e6a831f7935f336f896877fb62ba3bd1b4cb8877b8d4221a604ce8f9b499",
+      "budget": 215701.02892262035
+    },
+    {
+      "file": "data\\demo\\04_materiais_escassos.json",
+      "run_id": "cd3dbd6f-6570-498f-8212-578e3c408817",
+      "hash": "e6d9b2d1b06dbab19cc633c03993ea7c17c86bd17192584f817b443da343b79b",
+      "budget": -191580.0
+    },
+    {
+      "file": "data\\demo\\05_demanda_perdida.json",
+      "run_id": "a1d809db-cb33-4ce5-baed-c507283d3dc4",
+      "hash": "91b8ede16756bd9d32df6fe92bb90ba7d1ef31322ab394f03f6bb8d784e3855b",
+      "budget": 248394.02892262035
+    }
+  ],
+  "original_files_checked": 42,
+  "original_files_changed": 0
+}
